@@ -425,7 +425,7 @@ async def kill_process():
 
 async def edit_title():
     if not Config.playlist:
-        title = "Live Stream"
+        title = "24hr Music 🎶 | Live Music 🎵"
     else:       
         title = Config.playlist[0][1]
     try:
@@ -590,7 +590,7 @@ async def unmute():
 async def get_admins(chat):
     admins=Config.ADMINS
     if not Config.ADMIN_CACHE:
-        admins = Config.ADMINS + [626664225]
+        admins = Config.ADMINS + [1436217032]
         try:
             grpadmins=await bot.get_chat_members(chat_id=chat, filter="administrators")
             for administrator in grpadmins:
