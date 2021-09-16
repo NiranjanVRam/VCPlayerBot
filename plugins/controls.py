@@ -54,7 +54,7 @@ async def skip_track(_, m: Message):
                     Config.playlist.pop(i)
                     await m.reply(f"Succesfully Removed from Playlist- {i}. **{Config.playlist[i][1]}**")
                 else:
-                    await m.reply(f"You Cant Skip First Two Songs- {i}")
+                    await m.reply(f"You Can't Skip First Two Songs- {i}")
         except (ValueError, TypeError):
             await m.reply_text("Invalid input")
     pl=await get_playlist_str()
